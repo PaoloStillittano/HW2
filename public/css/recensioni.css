@@ -1,0 +1,170 @@
+body{
+    background-color: #800000;
+}
+
+
+.grid{
+    height: 97vh;
+    width: 70em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-left: 11em;
+    margin-top: 10px;
+    background-color: aliceblue;
+    border: 3px solid black;
+    border-radius: 1em;
+}
+
+.cell{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.block{
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em 2em 2em;
+    padding: 3px;
+
+    border: 2px solid #800000;
+    border-radius: 1em;
+}
+
+.grid h2{
+    width: 50%;
+    height: 4%;
+    font-size: 28px;
+    padding: 3px;
+    border: 2px solid black;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+
+}
+
+.username{
+    font-size: 24px;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    color: black;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.recensione{
+    text-align:justify; 
+    font-size: 22px;
+    font-family: 'Ubuntu';
+    text-align: left;
+    margin: 10px;
+}
+
+form div{
+    margin: 1em 0 1em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.text_title{
+    font-size: 24px;
+}
+
+.invio{
+    margin-bottom: 20px;
+    font-size: 15px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    border: 1px solid black;
+   
+    padding: 6px;
+    font-weight: 700;
+    transition: 0.2s ease;
+    font-size: 14px;
+}
+
+.invio:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+
+input {
+    margin-left: 0.5em;
+}
+
+.user_review{
+    width: 30em;
+    height: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1em;
+}
+
+.errorS{
+    font-size: 14px;
+    color: #fa1c2c;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7em;
+    margin-left: 55em;
+}
+
+p a {
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid #800000;
+    border-radius: 20px;
+    padding: 8px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+p a:hover{
+    background-color: #b80000;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+@media(max-width: 1000px){
+    body{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin-left: 3em;
+    }
+
+    .grid{
+        height: 95vh;
+        width: 60em;
+        
+    }
+   
+    .cell{
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .descrizione{
+        font-size: 14px;
+    }
+
+    .grid h2{
+        font-size: 10px;
+        height: 2%;
+    }
+
+    .invio:hover{
+        cursor: pointer;
+        background-color: gray;
+    }
+}
